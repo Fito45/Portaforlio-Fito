@@ -1,4 +1,55 @@
+/*hero*/
 
-html{
-    font-family: "Merriweather", serif;
-}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center
+    background-color: rgb(245, 71, 71);
+  }
+  
+  .hero-wrapper{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(255, 116, 116);
+  }
+  
+  .hero-content{
+    padding: 24px;
+    background-color: rgb(217, 36, 36);
+  }
+  
+  .hero-title{
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    color: var(#393939);
+    margin-bottom: 24px;
+    background-color: rgb(142, 28, 28);
+  }
+  
+  .hero-paragraph{
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--negro);
+    background-color: rgb(255, 80, 80);
+  }
+  
+  .hero-button{
+    width: fit-content;
+    color:var(--blanco);
+    font-weight: 900;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgb(224, 76, 76);
+  }
+  
+  .hero-porfile{
+    background-color: rgb(224, 43, 43);
+  }
+  
+  .hero-image{
+    background-color: rgb(119, 15, 15);
+  }
+  
+  
