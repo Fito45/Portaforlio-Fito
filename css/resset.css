@@ -1,6 +1,7 @@
 /* Resset*/
 
 @charset "UTF-8";
+
 /*
 
   Con este reset vamos a resolver:
@@ -15,7 +16,7 @@
 :root {
   --negro: #393939;
   /* Tipografía */
-  --tipo-principal:  Merriweather, serif;
+  --tipo-principal: Merriweather, serif;
   --tipo-secundaria: Verdana;
 }
 
@@ -25,6 +26,7 @@
     --negro: #ececec;
   }*/
 }
+
 /* Opcional */
 /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* Opcional */
@@ -32,32 +34,37 @@
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
+
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
   margin: 0;
   padding: 0;
   border: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   vertical-align: baseline;
 }
 
 /* Evitamos problemas con las imagenes */
-img, picture, video, iframe, figure {
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
   /* opcional */
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* opcional */
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -84,7 +91,21 @@ html {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
@@ -93,7 +114,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 }
 
 /* Evitamos problemas con los pseudoelementos de quotes */
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -103,29 +127,37 @@ blockquote:before, blockquote:after, q:before, q:after {
   background-color: var(--negro);
   color: var(--blanco);
 }
+
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
-form, input, textarea, select, button, label {
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
   /* opcional */
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Reseteamos las tablas */
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -152,8 +184,8 @@ body {
   line-height: 1.4em;
   /* opcional */
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   /* opcional */
   font-smooth: always;
   /* opcional */
@@ -162,41 +194,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*hero*/
-
-.hero{
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(245, 71, 71);
+*/
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+	/* Color */
+	--rojo:#E44040;
+	--rosa: #FFA3A3;
+	--carmen: #C92B2B;
+	--blanco: #F8F9F8;
+  --negro: #050A08;
+  /* Tipografía */
+  --tipo-principal: "Poppins", sans-serif;
+  --tipo-secundaria: Verdana;
+	--tipo-secundaria: "Montserrat", sans-serif;
 }
 
-.hero-wrapper{
-  max-width: 1200px;
-  background-color: rgb(255, 116, 116);
-}
-
-.hero-content{
-  background-color: rgb(217, 36, 36);
-}
-
-.hero-title{
-  background-color: rgb(142, 28, 28);
-}
-
-.hero-paragraph{
-  background-color: rgb(255, 80, 80);
-}
-
-.hero-button{
-  background-color: rgb(224, 76, 76);
-}
-
-.hero-porfile{
-  background-color: rgb(224, 43, 43);
-}
-
-.hero-image{
-  background-color: rgb(119, 15, 15);
-}
-
+/* Las adaptamos al modo oscuro */
+@@ -148,6 +153,7 @@ body {
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+	background-color: var(--blanco);
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
